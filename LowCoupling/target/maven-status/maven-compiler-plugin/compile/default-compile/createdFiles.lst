@@ -1,0 +1,6 @@
+com\mycompany\lowcoupling\pago\Culqi_procesoPago.class
+com\mycompany\lowcoupling\pago\ProcesoPago.class
+com\mycompany\lowcoupling\pago\PagoService.class
+com\mycompany\lowcoupling\LowCoupling.class
+com\mycompany\lowcoupling\pago\PagoEfectivo_procesoPago.class
+com\mycompany\lowcoupling\pago\Paypal_procesoPago.class

@@ -1,0 +1,4 @@
+com\mycompany\controller\model\Producto.class
+com\mycompany\controller\VentaController.class
+com\mycompany\controller\main\Main.class
+com\mycompany\controller\repositorio\Productos_repositorio.class
