@@ -1,4 +1,3 @@
-
 package com.mycompany.controller.repositorio;
 
 import com.mycompany.controller.model.Producto;
@@ -6,13 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Productos_repositorio {
+
     private List<Producto> productos;
-    
+
     public Productos_repositorio() {
         // Inicializar el catálogo con productos predefinidos
         productos = catalogoPredefinido();
     }
-    
+
     private List<Producto> catalogoPredefinido() {
         List<Producto> catalogo = new ArrayList<>();
 
@@ -24,13 +24,9 @@ public class Productos_repositorio {
 
         return catalogo;
     }
-    
-    
+
     public List<Producto> obtenerTodoProducto() {
         return productos;
     }
-    
 
-    
 }
-

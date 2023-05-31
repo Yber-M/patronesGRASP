@@ -1,9 +1,12 @@
 package com.mycompany.controller;
+
 import com.mycompany.controller.carrocompras.CarritoCompras;
 import com.mycompany.controller.model.Producto;
 import com.mycompany.controller.repositorio.Productos_repositorio;
 import java.util.List;
+
 public class VentaController {
+
     private Productos_repositorio catalogo;
     private CarritoCompras carrito;
 
@@ -14,7 +17,7 @@ public class VentaController {
     }
 
     public List<Producto> obtenerCatalogo() {
-        
+
         return catalogo.obtenerTodoProducto();
     }
 
