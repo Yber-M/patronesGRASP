@@ -1,0 +1,28 @@
+Voy a presentar el patrón controller.
+El cual se utiliza para asignar la responsabilidad de coordinar y controlar las acciones y el flujo de información en un sistema.
+Recibi solicitudes y coordina las acciones necesarias para tomar decisiones basadas en el estado del sistema.
+Diseño más modular, fácil de mantener y reutilizable.
+
+----------------- SIGUIENTE PPT ----------------------------
+
+Como ejemplo tenemos un sistema de ventas el cual será para una tienda en línea. Ahora el sistema debe permitir a los usuarios ver el catálogo de productos, agregar productos al carrito de compras, realizar proceso de pago y genera facturas. También será necesario la implementación del patrón CONTROLLER.
+
+----------------- SIGUIENTE PPT ----------------------------
+
+En primer lugar, definimos la clase Producto con los atributos y métodos setter y getters necesarios para representar un producto, en este caso usamos, idProducto, nombre del producto y precio.
+
+----------------- SIGUIENTE PPT ----------------------------
+Hemos diseñado un controlador central llamado “VentaController”, el cual se encargará de las solicitudes en cuanto a las ventas y realizará las operaciones necesarias para brindar respuestas correspondientes.
+Este controlador se encargará de mantener una instancia del catálogo de productos (Productos_repositorio) y del carrito de compras (CarritoCompras). Además, proporcionará métodos para obtener el catálogo de productos (obtenerCatalogo()), agregar productos al carrito (añadir_carrito()) y generar la factura (generarComprobante()).
+
+----------------- SIGUIENTE PPT ----------------------------
+Acerca de la clase Productos_repositorio , esta clase se encarga de mantener el catálogo de productos disponibles en la tienda. En su constructor, se crea un catálogo predefinido de productos utilizando el método catalogoPredefinido(). Este método crea y agrega productos al catálogo utilizando los datos proporcionados, como el ID, el nombre y el precio. El catálogo de productos se almacena en una lista.
+
+----------------- SIGUIENTE PPT ----------------------------
+La clase CarritoCompras representa el carrito de compras de la tienda. Tiene una lista de productos que se agregan o eliminan utilizando los métodos agregarProducto() y eliminarProducto(). Adicionalmente, el método calcularTotal() calcula el monto total del pago sumando los precios de los productos en el carrito. También proporciona métodos para obtener la lista de productos en el carrito y para limpiar el carrito después del proceso de pago.
+
+----------------- SIGUIENTE PPT ----------------------------
+Para concluir, la clase Main la cual contiene el método main(), que es el punto de entrada del programa. Aquí se crea una instancia del controlador VentaController. Luego, se obtiene el catálogo de productos llamando al método obtenerCatalogo() del controlador y se imprime en consola. 
+
+----------------- FIN ----------------------------
+
